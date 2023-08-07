@@ -38,21 +38,20 @@ class Result {
     }
 int[] ranks = places.stream().mapToInt(i->i).toArray();
 ArrayList<Integer> scores = new ArrayList<Integer>();
-int index=0;
+int index=ranks.length+1;
 for (int i=0; i<alice.length;i++){
-    for (int j=(ranks.length-1);j>=0;j--){    
-        if (alice[i]>ranks[j]){
-            index=j+1;
+    for (int j=ranks.length;j>0;j--){    
+        if(alice[i]<ranks[j-1]){
+        index=j+1;
+        scores.add(index);
+        break;
         }
-        if (alice[i]<ranks[j]){
-            index=j-1;
-        }
-        
-       if (alice[i]==ranks[j]){
-            index=j;
-        }
+        if(alice[i]>ranks[j-1]&& j==1){
+          scores.add(1);  
+        }  
+         
     }
-    scores.add(index);
+    
 }
 
 
