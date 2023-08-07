@@ -4,7 +4,34 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "SelectionSort",
+            "request": "launch",
+            "mainClass": "SelectionSort",
+            "projectName": "Algorithm_8d1ad5f1"
+        },
+        {
+            "type": "java",
+            "name": "InsertionSort",
+            "request": "launch",
+            "mainClass": "InsertionSort",
+            "projectName": "Algorithm_8d1ad5f1"
+        },
+        {
+            "type": "java",
+            "name": "Inserton_sort",
+            "request": "launch",
+            "mainClass": "Inserton_sort",
+            "projectName": "Algorithm_8d1ad5f1"
+        },
+        {
+            "type": "java",
+            "name": "Merge_sort",
+            "request": "launch",
+            "mainClass": "Merge_sort",
+            "projectName": "Algorithm_8d1ad5f1"
+        },
         {
             "type": "java",
             "name": "Launch Current File",
